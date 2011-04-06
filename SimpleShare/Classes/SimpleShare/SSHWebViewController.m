@@ -96,6 +96,10 @@
     
 	[[self navigationItem] setRightBarButtonItem:nil];
     
+    if ([error code] == -999) {
+        return;
+    }
+        
     UIAlertView *alert = [[UIAlertView alloc] 
 						  initWithTitle:[error localizedDescription]
 						  message:[error localizedFailureReason]
