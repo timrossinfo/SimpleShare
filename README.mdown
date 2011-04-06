@@ -1,0 +1,52 @@
+# SimpleShare
+
+SimpleShare provides an easy way for your customers to share your app with friends by Twitter, Facebook or Email. SimpleShare goes right back to basics to provide a way of sharing that is quick to add to an existing project and easy to use. By making it easy for customers to tell their friends about your app, you can increase sales through word-of-mouth referrals.
+
+## Adding SimpleShare to your project
+
+It is easy to add SimpleShare to your project. Just add the files in Classes/SimpleShare to your project.
+
+## Usage
+
+Here is some example code that uses SimpleShare. The source code includes this example that shows SimpleShare in action. You can try it by running the project in Xcode.
+
+#import "SSH.h"
+#import "SSHActionSheet.h"
+
+@interface MyViewController : UIViewController <SSHCallbackDelegate>
+
+- (IBAction)actionButtonPressed;
+
+@end
+
+@implementation MyViewController
+
+- (IBAction)actionButtonPressed {
+   
+    [SSH setRootViewController:self]; // The controller that hosts the sharing view.
+    [SSH setCallbackDelegate:self]; // The delegate that gets notified when the sharing view is dismissed.
+   
+    SSHActionSheet *actionSheet = [SSHActionSheet actionSheet];
+   
+    [actionSheet showInView:self.view];
+}
+
+#pragma mark -
+#pragma mark SSHCallbackDelegate methods
+
+- (void)didFinishSharing {
+   
+    NSLog(@"Finished sharing");
+}
+
+@end
+
+## Important
+
+Please note that SimpleShare should be considered pre-release and has not been extensively tested. Please ensure you test thoroughly before deploying it in a production application. I cannot be held responsible for any issues that arise from using this code in your application.
+
+## Change-log
+
+**Version 0.1** @ 7.4.11
+
+- Initial release.

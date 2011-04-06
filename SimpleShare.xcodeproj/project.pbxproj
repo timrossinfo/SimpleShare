@@ -15,7 +15,7 @@
 		222B6663134C08B500AE014B /* NSString+URLEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B6662134C08B300AE014B /* NSString+URLEscape.m */; };
 		222B6666134C0F1200AE014B /* SSHEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B6665134C0F1000AE014B /* SSHEmailViewController.m */; };
 		222B6668134C0F8900AE014B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222B6667134C0F8900AE014B /* MessageUI.framework */; };
-		222B66AA134C243100AE014B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 222B66A9134C243000AE014B /* README */; };
+		222B66AA134C243100AE014B /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = 222B66A9134C243000AE014B /* README.mdown */; };
 		222B66AC134C244400AE014B /* SSHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B66AB134C244400AE014B /* SSHWebViewController.m */; };
 		22C7F8AD134BDCCD0086C413 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C7F8AC134BDCCD0086C413 /* UIKit.framework */; };
 		22C7F8AF134BDCCD0086C413 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C7F8AE134BDCCD0086C413 /* Foundation.framework */; };
@@ -42,7 +42,7 @@
 		222B6664134C0F0F00AE014B /* SSHEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHEmailViewController.h; sourceTree = "<group>"; };
 		222B6665134C0F1000AE014B /* SSHEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHEmailViewController.m; sourceTree = "<group>"; };
 		222B6667134C0F8900AE014B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		222B66A9134C243000AE014B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
+		222B66A9134C243000AE014B /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.mdown; sourceTree = SOURCE_ROOT; };
 		222B66AB134C244400AE014B /* SSHWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHWebViewController.m; sourceTree = "<group>"; };
 		22C7F8A8134BDCCD0086C413 /* SimpleShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C7F8AC134BDCCD0086C413 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -122,11 +122,10 @@
 		22C7F89D134BDCCD0086C413 = {
 			isa = PBXGroup;
 			children = (
-				222B66A9134C243000AE014B /* README */,
+				222B66A9134C243000AE014B /* README.mdown */,
 				222B64BE134BDD2500AE014B /* Classes */,
 				222B64C0134BDD3800AE014B /* Resources */,
 				22C7F8B3134BDCCD0086C413 /* Supporting Files */,
-				22C7F8B2134BDCCD0086C413 /* SimpleShare */,
 				22C7F8AB134BDCCD0086C413 /* Frameworks */,
 				22C7F8A9134BDCCD0086C413 /* Products */,
 			);
@@ -149,13 +148,6 @@
 				22C7F8B0134BDCCD0086C413 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		22C7F8B2134BDCCD0086C413 /* SimpleShare */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SimpleShare;
 			sourceTree = "<group>";
 		};
 		22C7F8B3134BDCCD0086C413 /* Supporting Files */ = {
@@ -223,7 +215,7 @@
 				22C7F8B7134BDCCD0086C413 /* InfoPlist.strings in Resources */,
 				22C7F8C0134BDCCD0086C413 /* MainWindow.xib in Resources */,
 				222B64CD134BDD6D00AE014B /* RootViewController.xib in Resources */,
-				222B66AA134C243100AE014B /* README in Resources */,
+				222B66AA134C243100AE014B /* README.mdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
