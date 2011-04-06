@@ -1,22 +1,22 @@
 //
-//  SSHTwitterViewController.m
+//  SSHFacebookViewController.m
 //  SimpleShare
 //
 //  Created by Timothy Ross on 06/04/2011.
 //  Copyright 2011 Blue Key Digital Limited. All rights reserved.
 //
 
-#import "SSHTwitterViewController.h"
+#import "SSHFacebookViewController.h"
 #import "SSHConfig.h"
 #import "NSString+URLEscape.h"
 
-@interface SSHTwitterViewController()
+@interface SSHFacebookViewController()
 
 @property (nonatomic, retain) UIWebView *webView;
 
 @end
 
-@implementation SSHTwitterViewController
+@implementation SSHFacebookViewController
 
 @synthesize webView;
 
@@ -24,7 +24,7 @@
     
     if ((self = [super init])) {
         
-        self.title = @"Share on Twitter";
+        self.title = @"Share on Facebook";
         
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(done)];
     }
@@ -41,8 +41,8 @@
     [self.webView setDelegate:self];
     [self.view addSubview:self.webView];
     
-    NSString *twitterUrlString = [NSString stringWithFormat:@"http://twitter.com/share?text=%@", [TWITTER_TEXT urlEscape]];
-    NSURL *url = [NSURL URLWithString:twitterUrlString];
+    NSString *facebookUrlString = [NSString stringWithFormat:@"http://www.facebook.com/dialog/feed?app_id=%@&redirect_uri=http://facebook.com/?sk=lf&link=%@&display=touch", FACEBOOK_APP_ID, [FACEBOOK_LINK urlEscape]];
+    NSURL *url = [NSURL URLWithString:facebookUrlString];
 	NSURLRequest *request = [NSURLRequest requestWithURL:url];
 	[self.webView loadRequest:request];
     

@@ -9,6 +9,8 @@
 #import "SSHActionSheet.h"
 #import "SSH.h"
 #import "SSHTwitterViewController.h"
+#import "SSHFacebookViewController.h"
+#import "SSHEmailViewController.h"
 
 @implementation SSHActionSheet
 
@@ -28,7 +30,7 @@
     return [actionSheet autorelease];
 }
 
--(void)showTwitter {
+-(void)showTwitterViewController {
     
     SSHTwitterViewController *twitterController = [[SSHTwitterViewController alloc] init];
     
@@ -39,11 +41,39 @@
 	[twitterController release];
 }
 
+-(void)showFacebookViewController {
+    
+    SSHFacebookViewController *facebookController = [[SSHFacebookViewController alloc] init];
+    
+	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:facebookController];
+	[[[SSH currentHelper] rootViewController] presentModalViewController:navController animated:YES];
+	
+	[navController release];
+	[facebookController release];
+}
+
+-(void)showEmailViewController {
+    
+    SSHEmailViewController *emailController = [[SSHEmailViewController alloc] init];
+    
+	[[[SSH currentHelper] rootViewController] presentModalViewController:emailController animated:YES];
+
+	[emailController release];
+}
+
 - (void)dismissWithClickedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated {
     
     if (buttonIndex == 0) {
 
-        [self showTwitter];
+        [self showTwitterViewController];
+    }
+    else if (buttonIndex == 1) {
+        
+        [self showFacebookViewController];
+    }
+    else if (buttonIndex == 2) {
+        
+        [self showEmailViewController];
     }
 	
 	[super dismissWithClickedButtonIndex:buttonIndex animated:animated];

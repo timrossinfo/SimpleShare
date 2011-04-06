@@ -7,3 +7,9 @@
 //
 
 #define TWITTER_TEXT @"Check out this app: http://www.myapp.com"
+
+#define FACEBOOK_APP_ID @"123050457758183"
+#define FACEBOOK_LINK @"http://www.myapp.com"
+
+#define EMAIL_SUBJECT @"Check out this app"
+#define EMAIL_BODY @"http://www.myapp.com"
