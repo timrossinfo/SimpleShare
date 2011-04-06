@@ -2,6 +2,11 @@
 
 SimpleShare provides an easy way for your customers to share your app with friends by Twitter, Facebook or Email. SimpleShare goes right back to basics to provide a way of sharing that is quick to add to an existing project and easy to use. By making it easy for customers to tell their friends about your app, you can increase sales through word-of-mouth referrals.
 
+[![](http://dl.dropbox.com/u/4925185/SimpleShare/Screen1-thumb.png)](http://dl.dropbox.com/u/4925185/SimpleShare/Screen1.png)
+[![](http://dl.dropbox.com/u/4925185/SimpleShare/Screen2-thumb.png)](http://dl.dropbox.com/u/4925185/SimpleShare/Screen2.png)
+[![](http://dl.dropbox.com/u/4925185/SimpleShare/Screen3-thumb.png)](http://dl.dropbox.com/u/4925185/SimpleShare/Screen3.png)
+[![](http://dl.dropbox.com/u/4925185/SimpleShare/Screen4-thumb.png)](http://dl.dropbox.com/u/4925185/SimpleShare/Screen4.png)
+
 ## Adding SimpleShare to your project
 
 It is easy to add SimpleShare to your project:
