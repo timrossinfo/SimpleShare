@@ -4,7 +4,11 @@ SimpleShare provides an easy way for your customers to share your app with frien
 
 ## Adding SimpleShare to your project
 
-It is easy to add SimpleShare to your project. Just add the files in Classes/SimpleShare to your project.
+It is easy to add SimpleShare to your project:
+
+1. Add the files in Classes/SimpleShare to your project.
+
+2. Update the values in `SSHConfig.h` for your application and Facebook API account.
 
 ## Usage
 
@@ -42,6 +46,8 @@ Here is some example code that uses SimpleShare. The source code includes this e
 	@end
 
 ## Important
+
+This code is distributed under the terms and conditions of the MIT license. 
 
 Please note that SimpleShare should be considered pre-release and has not been extensively tested. Please ensure you test thoroughly before deploying it in a production application. I cannot be held responsible for any issues that arise from using this code in your application.
 
