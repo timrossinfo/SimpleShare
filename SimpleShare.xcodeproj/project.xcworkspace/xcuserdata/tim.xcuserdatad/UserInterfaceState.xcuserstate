@@ -243,7 +243,7 @@
 		<string>IDEShowUtilities</string>
 		<string>IDEEditorArea</string>
 		<integer>0</integer>
-		<string>README</string>
+		<string>README.mdown</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -554,7 +554,7 @@
 			</array>
 		</dict>
 		<string>SimpleShare</string>
-		<string>README</string>
+		<string>README.mdown</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1716,7 +1716,7 @@
 				<integer>169</integer>
 			</dict>
 			<key>NS.string</key>
-			<string>file://localhost/Users/tim/Projects/SimpleShare/README</string>
+			<string>file://localhost/Users/tim/Projects/SimpleShare/README.mdown</string>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -1795,7 +1795,7 @@
 		<string>PrimaryDocumentVisibleCharacterRange</string>
 		<string>HideAllIssues</string>
 		<string>PrimaryDocumentSelectedCharacterRange</string>
-		<real>323823016.15878999</real>
+		<real>323823067.53618503</real>
 		<string>{0, 1389}</string>
 		<string>{754, 0}</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
@@ -1816,7 +1816,7 @@
 				<integer>182</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/tim/Projects/SimpleShare/README</string>
+		<string>file://localhost/Users/tim/Projects/SimpleShare/README.mdown</string>
 		<dict>
 			<key>$classes</key>
 			<array>
@@ -10608,9 +10608,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>323820933.420793</real>
-		<string>{0, 826}</string>
-		<string>{27, 0}</string>
+		<real>323823067.53372997</real>
+		<string>{0, 1389}</string>
+		<string>{754, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -11412,10 +11412,6 @@
 					<key>CF$UID</key>
 					<integer>872</integer>
 				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>874</integer>
-				</dict>
 			</array>
 		</dict>
 		<dict>
@@ -11435,7 +11431,7 @@
 				<integer>857</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/tim/Projects/SimpleShare/README</string>
+		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/Example/RootViewController.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -11453,7 +11449,7 @@
 				<integer>859</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/Example/RootViewController.m</string>
+		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/SimpleShare-Info.plist</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -11471,7 +11467,7 @@
 				<integer>861</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/SimpleShare-Info.plist</string>
+		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/SimpleShare/SSHActionSheet.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -11489,7 +11485,7 @@
 				<integer>863</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/SimpleShare/SSHActionSheet.m</string>
+		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/Example/SimpleShareAppDelegate.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -11507,7 +11503,7 @@
 				<integer>865</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/Example/SimpleShareAppDelegate.m</string>
+		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/SimpleShare/SSHWebViewController.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -11525,7 +11521,7 @@
 				<integer>867</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/SimpleShare/SSHWebViewController.m</string>
+		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/SimpleShare/SSHEmailViewController.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -11543,7 +11539,7 @@
 				<integer>869</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/SimpleShare/SSHEmailViewController.m</string>
+		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/SimpleShare/SSHConfig.h</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -11561,24 +11557,6 @@
 				<integer>871</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/SimpleShare/SSHConfig.h</string>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>183</integer>
-			</dict>
-			<key>NS.base</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>0</integer>
-			</dict>
-			<key>NS.relative</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>873</integer>
-			</dict>
-		</dict>
 		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/SimpleShare/SSH.h</string>
 		<dict>
 			<key>$class</key>
@@ -11594,7 +11572,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>875</integer>
+				<integer>873</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/tim/Projects/SimpleShare/SimpleShare/Classes/SimpleShare/SSH.m</string>
