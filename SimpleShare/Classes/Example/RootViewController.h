@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SSH.h"
 
-@interface RootViewController : UIViewController <UIActionSheetDelegate> {
+@interface RootViewController : UIViewController <SSHCallbackDelegate> {
     
 }
 

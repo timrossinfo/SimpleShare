@@ -8,14 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol SSHCallbackDelegate
+
+- (void)didFinishSharing;
+
+@end
+
 @interface SSH : NSObject {
     
     UIViewController *rootViewController;
+    id<SSHCallbackDelegate> callbackDelegate;
 }
 
 @property (nonatomic, assign) UIViewController *rootViewController;
+@property (nonatomic, assign) id<SSHCallbackDelegate> callbackDelegate;
 
 + (SSH *)currentHelper;
 + (void)setRootViewController:(UIViewController *)aViewController;
++ (void)setCallbackDelegate:(id<SSHCallbackDelegate>)aCallbackDelegate;
 
 @end

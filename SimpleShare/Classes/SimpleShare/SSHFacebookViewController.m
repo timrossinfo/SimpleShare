@@ -7,6 +7,7 @@
 //
 
 #import "SSHFacebookViewController.h"
+#import "SSH.h"
 #import "SSHConfig.h"
 #import "NSString+URLEscape.h"
 
@@ -64,6 +65,7 @@
 - (void)done {
     
     [self dismissModalViewControllerAnimated:YES];
+    [[[SSH currentHelper] callbackDelegate] didFinishSharing];
 }
 
 @end

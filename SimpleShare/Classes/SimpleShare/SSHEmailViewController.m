@@ -38,6 +38,7 @@
 		  didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
 	
 	[self dismissModalViewControllerAnimated:YES];
+    [[[SSH currentHelper] callbackDelegate] didFinishSharing];
 }
 
 @end

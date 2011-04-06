@@ -13,19 +13,26 @@
 static SSH *currentHelper = nil;
 
 @synthesize rootViewController;
+@synthesize callbackDelegate;
 
-+ (SSH *)currentHelper
-{
++ (SSH *)currentHelper {
+    
 	if (currentHelper == nil)
 		currentHelper = [[SSH alloc] init];
 	
 	return currentHelper;
 }
 
-+ (void)setRootViewController:(UIViewController *)aViewController
-{	
++ (void)setRootViewController:(UIViewController *)aViewController {
+	
 	SSH *helper = [self currentHelper];
 	[helper setRootViewController:aViewController];
+}
+
++ (void)setCallbackDelegate:(id<SSHCallbackDelegate>)aCallbackDelegate {
+    
+    SSH *helper = [self currentHelper];
+	[helper setCallbackDelegate:aCallbackDelegate];
 }
 
 - (void)dealloc {

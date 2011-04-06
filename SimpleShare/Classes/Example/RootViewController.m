@@ -7,7 +7,6 @@
 //
 
 #import "RootViewController.h"
-#import "SSH.h"
 #import "SSHActionSheet.h"
 
 @implementation RootViewController
@@ -15,16 +14,19 @@
 - (IBAction)actionButtonPressed {
     
     [SSH setRootViewController:self];
+    [SSH setCallbackDelegate:self];
     
     SSHActionSheet *actionSheet = [SSHActionSheet actionSheet];
-    [actionSheet setDelegate:self];
     
     [actionSheet showInView:self.view];
 }
 
-- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
+#pragma mark -
+#pragma mark SSHCallbackDelegate methods
+
+- (void)didFinishSharing {
     
-    NSLog(@"Action sheet dismissed");
+    NSLog(@"Did finish sharing");
 }
 
 @end

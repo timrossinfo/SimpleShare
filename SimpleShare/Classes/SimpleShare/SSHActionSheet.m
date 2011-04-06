@@ -75,6 +75,10 @@
         
         [self showEmailViewController];
     }
+    else if(buttonIndex == [self cancelButtonIndex])
+    {
+        [[[SSH currentHelper] callbackDelegate] didFinishSharing];
+    }
 	
 	[super dismissWithClickedButtonIndex:buttonIndex animated:animated];
 }
