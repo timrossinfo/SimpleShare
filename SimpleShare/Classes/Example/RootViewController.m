@@ -7,12 +7,24 @@
 //
 
 #import "RootViewController.h"
+#import "SSH.h"
+#import "SSHActionSheet.h"
 
 @implementation RootViewController
 
 - (IBAction)actionButtonPressed {
     
-    NSLog(@"Action button pressed");
+    [SSH setRootViewController:self];
+    
+    SSHActionSheet *actionSheet = [SSHActionSheet actionSheet];
+    [actionSheet setDelegate:self];
+    
+    [actionSheet showInView:self.view];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    
+    NSLog(@"Action sheet dismissed");
 }
 
 @end

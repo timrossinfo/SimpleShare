@@ -11,6 +11,8 @@
 		222B64CA134BDD6200AE014B /* SimpleShareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B64C5134BDD6200AE014B /* SimpleShareAppDelegate.m */; };
 		222B64CB134BDD6200AE014B /* SSHActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B64C8134BDD6200AE014B /* SSHActionSheet.m */; };
 		222B64CD134BDD6D00AE014B /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222B64CC134BDD6D00AE014B /* RootViewController.xib */; };
+		222B64D8134BE2B000AE014B /* SSHTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B64D7134BE2B000AE014B /* SSHTwitterViewController.m */; };
+		222B64E9134BE61300AE014B /* SSH.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B64E8134BE61300AE014B /* SSH.m */; };
 		22C7F8AD134BDCCD0086C413 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C7F8AC134BDCCD0086C413 /* UIKit.framework */; };
 		22C7F8AF134BDCCD0086C413 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C7F8AE134BDCCD0086C413 /* Foundation.framework */; };
 		22C7F8B1134BDCCD0086C413 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C7F8B0134BDCCD0086C413 /* CoreGraphics.framework */; };
@@ -27,6 +29,11 @@
 		222B64C7134BDD6200AE014B /* SSHActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHActionSheet.h; sourceTree = "<group>"; };
 		222B64C8134BDD6200AE014B /* SSHActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHActionSheet.m; sourceTree = "<group>"; };
 		222B64CC134BDD6D00AE014B /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = SimpleShare/RootViewController.xib; sourceTree = "<group>"; };
+		222B64D6134BE2B000AE014B /* SSHTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHTwitterViewController.h; sourceTree = "<group>"; };
+		222B64D7134BE2B000AE014B /* SSHTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHTwitterViewController.m; sourceTree = "<group>"; };
+		222B64E7134BE61300AE014B /* SSH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSH.h; sourceTree = "<group>"; };
+		222B64E8134BE61300AE014B /* SSH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSH.m; sourceTree = "<group>"; };
+		222B64F8134BF6AA00AE014B /* SSHConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHConfig.h; sourceTree = "<group>"; };
 		22C7F8A8134BDCCD0086C413 /* SimpleShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C7F8AC134BDCCD0086C413 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22C7F8AE134BDCCD0086C413 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +94,11 @@
 			children = (
 				222B64C7134BDD6200AE014B /* SSHActionSheet.h */,
 				222B64C8134BDD6200AE014B /* SSHActionSheet.m */,
+				222B64D6134BE2B000AE014B /* SSHTwitterViewController.h */,
+				222B64D7134BE2B000AE014B /* SSHTwitterViewController.m */,
+				222B64E7134BE61300AE014B /* SSH.h */,
+				222B64E8134BE61300AE014B /* SSH.m */,
+				222B64F8134BF6AA00AE014B /* SSHConfig.h */,
 			);
 			name = SimpleShare;
 			path = SimpleShare/Classes/SimpleShare;
@@ -208,6 +220,8 @@
 				222B64C9134BDD6200AE014B /* RootViewController.m in Sources */,
 				222B64CA134BDD6200AE014B /* SimpleShareAppDelegate.m in Sources */,
 				222B64CB134BDD6200AE014B /* SSHActionSheet.m in Sources */,
+				222B64D8134BE2B000AE014B /* SSHTwitterViewController.m in Sources */,
+				222B64E9134BE61300AE014B /* SSH.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

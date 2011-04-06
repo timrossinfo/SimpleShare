@@ -7,10 +7,12 @@
 //
 
 #import "SSHActionSheet.h"
+#import "SSH.h"
+#import "SSHTwitterViewController.h"
 
 @implementation SSHActionSheet
 
-+ (SSHActionSheet *)actionSheetWithView:(UIView *)aView {
++ (SSHActionSheet *)actionSheet {
     
     SSHActionSheet *actionSheet = [[SSHActionSheet alloc]
 								  initWithTitle:nil
@@ -22,13 +24,27 @@
 	actionSheet.title = @"Share";
     actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
 	actionSheet.opaque = YES;
-    [actionSheet showInView:aView];
-    [actionSheet release];
     
-    return actionSheet;
+    return [actionSheet autorelease];
+}
+
+-(void)showTwitter {
+    
+    SSHTwitterViewController *twitterController = [[SSHTwitterViewController alloc] init];
+    
+	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:twitterController];
+	[[[SSH currentHelper] rootViewController] presentModalViewController:navController animated:YES];
+	
+	[navController release];
+	[twitterController release];
 }
 
 - (void)dismissWithClickedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated {
+    
+    if (buttonIndex == 0) {
+
+        [self showTwitter];
+    }
 	
 	[super dismissWithClickedButtonIndex:buttonIndex animated:animated];
 }

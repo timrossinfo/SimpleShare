@@ -12,6 +12,6 @@
     
 }
 
-+ (SSHActionSheet *)actionSheetWithView:(UIView *)aView;
++ (SSHActionSheet *)actionSheet;
 
 @end
