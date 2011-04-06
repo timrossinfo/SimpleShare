@@ -26,7 +26,7 @@
 
 - (void)didFinishSharing {
     
-    NSLog(@"Did finish sharing");
+    NSLog(@"Finished sharing");
 }
 
 @end

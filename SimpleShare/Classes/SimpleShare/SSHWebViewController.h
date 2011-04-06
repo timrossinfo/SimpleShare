@@ -12,6 +12,7 @@
     
     UIWebView *webView;
     UIActivityIndicatorView *activityIndicator;
+    NSURL *currentUrl;
 }
 
 - (void)requestURL:(NSURL *)aUrl;

@@ -45,6 +45,9 @@
     [self.webView setDelegate:self];
     [self.view addSubview:self.webView];
     
+    NSURLRequest *request = [NSURLRequest requestWithURL:currentUrl];
+    [self.webView loadRequest:request];
+    
     [super viewDidLoad];
 }
 
@@ -59,6 +62,7 @@
     
     [webView release];
     [activityIndicator release];
+    [currentUrl release];
     [super dealloc];
 }
 
@@ -70,9 +74,7 @@
 
 - (void)requestURL:(NSURL *)aUrl {
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:aUrl];
-    self.view; // not sure why we have to do this?
-    [self.webView loadRequest:request];
+    currentUrl = [aUrl retain];
 }
 
 #pragma mark -
@@ -88,6 +90,20 @@
 - (void)webViewDidFinishLoad:(UIWebView*)webView {
     
     [[self navigationItem] setRightBarButtonItem:nil];
+}
+
+- (void)webView:(UIWebView*)webView didFailLoadWithError:(NSError*)error {
+    
+	[[self navigationItem] setRightBarButtonItem:nil];
+    
+    UIAlertView *alert = [[UIAlertView alloc] 
+						  initWithTitle:[error localizedDescription]
+						  message:[error localizedFailureReason]
+						  delegate:self 
+						  cancelButtonTitle:@"OK" 
+						  otherButtonTitles:nil];
+	[alert show];
+	[alert release];
 }
 
 @end

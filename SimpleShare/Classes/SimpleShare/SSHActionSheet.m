@@ -62,7 +62,7 @@
     }
     else if (buttonIndex == 1) {
         
-        NSString *urlString = [NSString stringWithFormat:@"http://www.facebook.com/dialog/feed?app_id=%@&redirect_uri=http://facebook.com/?sk=lf&link=%@&display=touch", FACEBOOK_APP_ID, [FACEBOOK_LINK urlEscape]];
+        NSString *urlString = [NSString stringWithFormat:@"http://www.facebook.com/dialog/feed?app_id=%@&redirect_uri=http://facebook.com/?sk=lf&message=%@&link=%@&display=touch", FACEBOOK_APP_ID, [FACEBOOK_MESSAGE urlEscape], [FACEBOOK_LINK urlEscape]];
         [self showWebView:@"Share on Facebook" withUrl:[NSURL URLWithString:urlString]];
     }
     else if (buttonIndex == 2) {
