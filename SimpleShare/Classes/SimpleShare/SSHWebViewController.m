@@ -26,16 +26,16 @@
     if ((self = [super init])) {
         
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(done)];
-        
-        UIActivityIndicatorView *aiv = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
-        [aiv startAnimating];
-        self.activityIndicator = aiv;
-        [aiv release];
     }
     return self;
 }
 
 - (void)viewDidLoad {
+    
+    UIActivityIndicatorView *aiv = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    [aiv startAnimating];
+    self.activityIndicator = aiv;
+    [aiv release];
     
     CGSize contentSize = self.view.bounds.size;
     CGSize navbarSize = self.navigationController.navigationBar.bounds.size;
