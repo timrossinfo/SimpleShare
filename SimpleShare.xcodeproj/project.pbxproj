@@ -11,12 +11,12 @@
 		222B64CA134BDD6200AE014B /* SimpleShareAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B64C5134BDD6200AE014B /* SimpleShareAppDelegate.m */; };
 		222B64CB134BDD6200AE014B /* SSHActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B64C8134BDD6200AE014B /* SSHActionSheet.m */; };
 		222B64CD134BDD6D00AE014B /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222B64CC134BDD6D00AE014B /* RootViewController.xib */; };
-		222B64D8134BE2B000AE014B /* SSHTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B64D7134BE2B000AE014B /* SSHTwitterViewController.m */; };
 		222B64E9134BE61300AE014B /* SSH.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B64E8134BE61300AE014B /* SSH.m */; };
-		222B665A134C007A00AE014B /* SSHFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B6659134C007900AE014B /* SSHFacebookViewController.m */; };
 		222B6663134C08B500AE014B /* NSString+URLEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B6662134C08B300AE014B /* NSString+URLEscape.m */; };
 		222B6666134C0F1200AE014B /* SSHEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B6665134C0F1000AE014B /* SSHEmailViewController.m */; };
 		222B6668134C0F8900AE014B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222B6667134C0F8900AE014B /* MessageUI.framework */; };
+		222B66AA134C243100AE014B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 222B66A9134C243000AE014B /* README */; };
+		222B66AC134C244400AE014B /* SSHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222B66AB134C244400AE014B /* SSHWebViewController.m */; };
 		22C7F8AD134BDCCD0086C413 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C7F8AC134BDCCD0086C413 /* UIKit.framework */; };
 		22C7F8AF134BDCCD0086C413 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C7F8AE134BDCCD0086C413 /* Foundation.framework */; };
 		22C7F8B1134BDCCD0086C413 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C7F8B0134BDCCD0086C413 /* CoreGraphics.framework */; };
@@ -33,18 +33,17 @@
 		222B64C7134BDD6200AE014B /* SSHActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHActionSheet.h; sourceTree = "<group>"; };
 		222B64C8134BDD6200AE014B /* SSHActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHActionSheet.m; sourceTree = "<group>"; };
 		222B64CC134BDD6D00AE014B /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = SimpleShare/RootViewController.xib; sourceTree = "<group>"; };
-		222B64D6134BE2B000AE014B /* SSHTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHTwitterViewController.h; sourceTree = "<group>"; };
-		222B64D7134BE2B000AE014B /* SSHTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHTwitterViewController.m; sourceTree = "<group>"; };
+		222B64D6134BE2B000AE014B /* SSHWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHWebViewController.h; sourceTree = "<group>"; };
 		222B64E7134BE61300AE014B /* SSH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSH.h; sourceTree = "<group>"; };
 		222B64E8134BE61300AE014B /* SSH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSH.m; sourceTree = "<group>"; };
 		222B64F8134BF6AA00AE014B /* SSHConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHConfig.h; sourceTree = "<group>"; };
-		222B6658134C007800AE014B /* SSHFacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHFacebookViewController.h; sourceTree = "<group>"; };
-		222B6659134C007900AE014B /* SSHFacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHFacebookViewController.m; sourceTree = "<group>"; };
 		222B6661134C08B300AE014B /* NSString+URLEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEscape.h"; sourceTree = "<group>"; };
 		222B6662134C08B300AE014B /* NSString+URLEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEscape.m"; sourceTree = "<group>"; };
 		222B6664134C0F0F00AE014B /* SSHEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHEmailViewController.h; sourceTree = "<group>"; };
 		222B6665134C0F1000AE014B /* SSHEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHEmailViewController.m; sourceTree = "<group>"; };
 		222B6667134C0F8900AE014B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		222B66A9134C243000AE014B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
+		222B66AB134C244400AE014B /* SSHWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHWebViewController.m; sourceTree = "<group>"; };
 		22C7F8A8134BDCCD0086C413 /* SimpleShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C7F8AC134BDCCD0086C413 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22C7F8AE134BDCCD0086C413 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,10 +105,8 @@
 			children = (
 				222B64C7134BDD6200AE014B /* SSHActionSheet.h */,
 				222B64C8134BDD6200AE014B /* SSHActionSheet.m */,
-				222B64D6134BE2B000AE014B /* SSHTwitterViewController.h */,
-				222B64D7134BE2B000AE014B /* SSHTwitterViewController.m */,
-				222B6658134C007800AE014B /* SSHFacebookViewController.h */,
-				222B6659134C007900AE014B /* SSHFacebookViewController.m */,
+				222B64D6134BE2B000AE014B /* SSHWebViewController.h */,
+				222B66AB134C244400AE014B /* SSHWebViewController.m */,
 				222B6664134C0F0F00AE014B /* SSHEmailViewController.h */,
 				222B6665134C0F1000AE014B /* SSHEmailViewController.m */,
 				222B64E7134BE61300AE014B /* SSH.h */,
@@ -125,6 +122,7 @@
 		22C7F89D134BDCCD0086C413 = {
 			isa = PBXGroup;
 			children = (
+				222B66A9134C243000AE014B /* README */,
 				222B64BE134BDD2500AE014B /* Classes */,
 				222B64C0134BDD3800AE014B /* Resources */,
 				22C7F8B3134BDCCD0086C413 /* Supporting Files */,
@@ -225,6 +223,7 @@
 				22C7F8B7134BDCCD0086C413 /* InfoPlist.strings in Resources */,
 				22C7F8C0134BDCCD0086C413 /* MainWindow.xib in Resources */,
 				222B64CD134BDD6D00AE014B /* RootViewController.xib in Resources */,
+				222B66AA134C243100AE014B /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,11 +238,10 @@
 				222B64C9134BDD6200AE014B /* RootViewController.m in Sources */,
 				222B64CA134BDD6200AE014B /* SimpleShareAppDelegate.m in Sources */,
 				222B64CB134BDD6200AE014B /* SSHActionSheet.m in Sources */,
-				222B64D8134BE2B000AE014B /* SSHTwitterViewController.m in Sources */,
 				222B64E9134BE61300AE014B /* SSH.m in Sources */,
-				222B665A134C007A00AE014B /* SSHFacebookViewController.m in Sources */,
 				222B6663134C08B500AE014B /* NSString+URLEscape.m in Sources */,
 				222B6666134C0F1200AE014B /* SSHEmailViewController.m in Sources */,
+				222B66AC134C244400AE014B /* SSHWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

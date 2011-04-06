@@ -1,5 +1,5 @@
 //
-//  SSHTwitterViewController.h
+//  SSHWebViewController.h
 //  SimpleShare
 //
 //  Created by Timothy Ross on 06/04/2011.
@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SSHTwitterViewController : UIViewController <UIWebViewDelegate> {
+@interface SSHWebViewController : UIViewController <UIWebViewDelegate> {
     
     UIWebView *webView;
+    UIActivityIndicatorView *activityIndicator;
 }
+
+- (void)requestURL:(NSURL *)aUrl;
 
 @end

@@ -8,9 +8,10 @@
 
 #import "SSHActionSheet.h"
 #import "SSH.h"
-#import "SSHTwitterViewController.h"
-#import "SSHFacebookViewController.h"
+#import "SSHConfig.h"
+#import "SSHWebViewController.h"
 #import "SSHEmailViewController.h"
+#import "NSString+URLEscape.h"
 
 @implementation SSHActionSheet
 
@@ -30,29 +31,7 @@
     return [actionSheet autorelease];
 }
 
--(void)showTwitterViewController {
-    
-    SSHTwitterViewController *twitterController = [[SSHTwitterViewController alloc] init];
-    
-	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:twitterController];
-	[[[SSH currentHelper] rootViewController] presentModalViewController:navController animated:YES];
-	
-	[navController release];
-	[twitterController release];
-}
-
--(void)showFacebookViewController {
-    
-    SSHFacebookViewController *facebookController = [[SSHFacebookViewController alloc] init];
-    
-	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:facebookController];
-	[[[SSH currentHelper] rootViewController] presentModalViewController:navController animated:YES];
-	
-	[navController release];
-	[facebookController release];
-}
-
--(void)showEmailViewController {
+-(void)showEmailView {
     
     SSHEmailViewController *emailController = [[SSHEmailViewController alloc] init];
     
@@ -61,19 +40,34 @@
 	[emailController release];
 }
 
+- (void)showWebView:(NSString *)aTitle withUrl:(NSURL *)aUrl {
+    
+    SSHWebViewController *webController = [[SSHWebViewController alloc] init];
+    [webController setTitle:aTitle];
+    [webController requestURL:aUrl];
+    
+	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:webController];
+	[[[SSH currentHelper] rootViewController] presentModalViewController:navController animated:YES];
+	
+	[navController release];
+	[webController release];
+}
+
 - (void)dismissWithClickedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated {
     
     if (buttonIndex == 0) {
 
-        [self showTwitterViewController];
+        NSString *urlString = [NSString stringWithFormat:@"http://twitter.com/share?text=%@", [TWITTER_TEXT urlEscape]];
+        [self showWebView:@"Share on Twitter" withUrl:[NSURL URLWithString:urlString]];
     }
     else if (buttonIndex == 1) {
         
-        [self showFacebookViewController];
+        NSString *urlString = [NSString stringWithFormat:@"http://www.facebook.com/dialog/feed?app_id=%@&redirect_uri=http://facebook.com/?sk=lf&link=%@&display=touch", FACEBOOK_APP_ID, [FACEBOOK_LINK urlEscape]];
+        [self showWebView:@"Share on Facebook" withUrl:[NSURL URLWithString:urlString]];
     }
     else if (buttonIndex == 2) {
         
-        [self showEmailViewController];
+        [self showEmailView];
     }
     else if(buttonIndex == [self cancelButtonIndex])
     {
