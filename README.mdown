@@ -10,36 +10,36 @@ It is easy to add SimpleShare to your project. Just add the files in Classes/Sim
 
 Here is some example code that uses SimpleShare. The source code includes this example that shows SimpleShare in action. You can try it by running the project in Xcode.
 
-#import "SSH.h"
-#import "SSHActionSheet.h"
+	#import "SSH.h"
+	#import "SSHActionSheet.h"
 
-@interface MyViewController : UIViewController <SSHCallbackDelegate>
+	@interface MyViewController : UIViewController <SSHCallbackDelegate>
 
-- (IBAction)actionButtonPressed;
+	- (IBAction)actionButtonPressed;
 
-@end
+	@end
 
-@implementation MyViewController
+	@implementation MyViewController
 
-- (IBAction)actionButtonPressed {
+	- (IBAction)actionButtonPressed {
    
-    [SSH setRootViewController:self]; // The controller that hosts the sharing view.
-    [SSH setCallbackDelegate:self]; // The delegate that gets notified when the sharing view is dismissed.
+	    [SSH setRootViewController:self]; // The controller that hosts the sharing view.
+	    [SSH setCallbackDelegate:self]; // The delegate that gets notified when the sharing view is dismissed.
    
-    SSHActionSheet *actionSheet = [SSHActionSheet actionSheet];
+	    SSHActionSheet *actionSheet = [SSHActionSheet actionSheet];
    
-    [actionSheet showInView:self.view];
-}
+	    [actionSheet showInView:self.view];
+	}
 
-#pragma mark -
-#pragma mark SSHCallbackDelegate methods
+	#pragma mark -
+	#pragma mark SSHCallbackDelegate methods
 
-- (void)didFinishSharing {
+	- (void)didFinishSharing {
    
-    NSLog(@"Finished sharing");
-}
+	    NSLog(@"Finished sharing");
+	}
 
-@end
+	@end
 
 ## Important
 
